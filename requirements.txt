@@ -1,0 +1,4 @@
+keyboard>=0.13.5
+numpy>=2.0
+pillow>=10.0
+pywin32>=306; platform_system == "Windows"

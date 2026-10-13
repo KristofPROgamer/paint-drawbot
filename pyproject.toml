@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paint-drawbot"
+version = "5.0.0"
+description = "Windows MS Paint drawing automation app."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "keyboard>=0.13.5",
+    "numpy>=2.0",
+    "pillow>=10.0",
+    "pywin32>=306; platform_system == 'Windows'",
+]
+
+[project.scripts]
+paint-drawbot = "paint_drawbot.main:main"
+
+[tool.setuptools.packages.find]
+include = ["paint_drawbot*"]
